@@ -1,6 +1,7 @@
 // api/validate-pin.js
 export async function POST(request) {
-  const { userpin } = await request.json();
+  const { userpin } = request;
+  console.log(userpin);
 
   // Simulate looking up the user PIN
   const isValidPin = await validateUserPin(userpin);
