@@ -9,22 +9,14 @@ export async function POST(request) {
     return {
       status: 200,
       body: {
-        message: {
-          type: "function-call",
-          call: {
-            // Call Object properties
-            // Add the necessary properties for the Call Object
-          },
-          // Other message properties
-          // Add any other required message properties
-        },
+        result: "Your email has been sent.",
       },
     };
   } else {
     return {
       status: 401,
       body: {
-        error: "Invalid PIN",
+        result: "Your email has been not been sent.",
       },
     };
   }
