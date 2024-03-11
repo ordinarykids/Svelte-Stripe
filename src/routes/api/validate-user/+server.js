@@ -34,5 +34,5 @@ export async function POST(request) {
 async function validateUserPin(userpin) {
   // Replace this with your actual PIN validation logic
   // For example, you can check against a database or any other validation method
-  return userpin === "1234";
+  return userpin === "121212";
 }
